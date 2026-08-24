@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shouhardo — Portfolio</title>
+
+    <!-- Browser Tab Logo -->
+    <link
+        rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23061009'/%3E%3Ctext x='50' y='70' text-anchor='middle' font-family='cursive' font-size='65' font-style='italic' fill='%23edf4ed'%3ES%3C/text%3E%3C/svg%3E"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<div class="intro" id="intro">
+
+    <div class="intro-title">Welcome</div>
+
+    <button id="enterWild" class="enter-wild">
+        Enter the Wildhouse
+    </button>
+
+    <div class="intro-pointer" id="introPointer">
+        <span></span>
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     BACKGROUND
+===================================================== -->
+
+<div class="forest-bg">
+
+    <div class="sky"></div>
+
+    <div class="stars" id="stars"></div>
+
+    <div class="moon" id="moon">
+        <div class="moon-light" id="moonLight"></div>
+        <div class="moon-craters"></div>
+    </div>
+
+    <div class="mountains"></div>
+
+    <div class="trees trees-back" id="treesBack"></div>
+    <div class="trees trees-mid" id="treesMid"></div>
+    <div class="trees trees-front" id="treesFront"></div>
+
+    <div class="wind wind-one"></div>
+    <div class="wind wind-two"></div>
+    <div class="wind wind-three"></div>
+
+    <div class="fog fog-one"></div>
+    <div class="fog fog-two"></div>
+    <div class="fog fog-three"></div>
+
+    <div class="fireflies" id="fireflies"></div>
+
+    <div class="vignette"></div>
+
+</div>
+
+
+<!-- =====================================================
+     CURSOR
+===================================================== -->
+
+<canvas id="cursorFog"></canvas>
+
+<div class="cursor-glow"></div>
+<div class="cursor-dot"></div>
+
+
+<!-- =====================================================
+     MUSIC
+===================================================== -->
+
+<audio id="ambientMusic" loop preload="auto">
+    <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+
+
+<!-- =====================================================
+     MAIN WEBSITE
+===================================================== -->
+
+<div class="site" id="site">
+
+    <!-- =================================================
+         NAVBAR
+    ================================================== -->
+
+    <header class="navbar">
+
+        <!-- Aesthetic S Logo -->
+        <a href="#" class="logo" id="siteLogo" aria-label="Refresh">
+            S
+        </a>
+
+        <nav class="nav" id="nav">
+
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+
+        </nav>
+
+        <button class="music-button" id="musicButton">
+            MUSIC
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <!-- =================================================
+             HOME
+        ================================================== -->
+
+        <section class="hero section" id="home">
+
+            <div class="hero-content">
+
+                <div class="eyebrow reveal">
+                    STUDENT · CREATOR · EXPLORER
+                </div>
+
+                <h1 class="reveal">
+                    Hey, I'm
+                    <br>
+                    <em>Shouhardo.</em>
+                </h1>
+
+                <p class="hero-text reveal">
+                    I'm a student and I love doing things —
+                    learning, creating, experimenting and
+                    exploring whatever catches my curiosity.
+                </p>
+
+                <div class="hero-buttons reveal">
+
+                    <a href="#about" class="button primary">
+                        Discover
+                    </a>
+
+                    <a href="#projects" class="button secondary">
+                        My Work
+                    </a>
+
+                </div>
+
+            </div>
+
+            <a href="#about" class="scroll-indicator">
+                <span></span>
+                SCROLL TO EXPLORE
+            </a>
+
+        </section>
+
+
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+        <section class="content-section section" id="about">
+
+            <div class="section-number reveal">
+                01
+                <small>ABOUT</small>
+            </div>
+
+            <div class="section-content">
+
+                <h2 class="section-title reveal">
+                    About Me?
+                </h2>
+
+                <div class="large-text reveal">
+
+                    <p>
+                        I'm a student with a curiosity for
+                        technology, creativity and the endless
+                        possibilities of the digital world.
+                    </p>
+
+                    <p>
+                        I enjoy learning new things,
+                        experimenting with ideas and turning
+                        concepts into something real.
+			And if you wanna relax hear the music out for abit too.	
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SKILLS
+        ================================================== -->
+
+        <section class="content-section section skills-section" id="skills">
+
+            <div class="section-number reveal">
+                02
+                <small>SKILLS</small>
+            </div>
+
+            <div class="section-content">
+
+                <h2 class="section-title reveal">
+                    Skills
+                </h2>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card reveal">
+                        <span>01</span>
+                        <h3>Web Development</h3>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <span>02</span>
+                        <h3>Video and Photo Editing</h3>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <span>03</span>
+                        <h3>AI-assisted development/ LLM tools/ AI-assisted problem solving</h3>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <span>04</span>
+                        <h3>Creative Problem Solving</h3>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             EDUCATION
+        ================================================== -->
+
+        <section class="content-section section" id="education">
+
+            <div class="section-number reveal">
+                03
+                <small>EDUCATION</small>
+            </div>
+
+            <div class="section-content">
+
+                <h2 class="section-title reveal">
+                    Education
+                </h2>
+
+                <div class="education-list">
+
+                    <article class="education-item reveal">
+
+                        <div class="education-progress">
+
+                            <span class="education-year">
+                                2022
+                            </span>
+
+                            <div class="progress-track">
+                                <div class="progress-fill"></div>
+                            </div>
+
+                            <span class="education-year">
+                                2027
+                            </span>
+
+                        </div>
+
+                        <div class="education-details">
+
+                            <span class="education-period">
+                                2022 – Current
+                            </span>
+
+                            <h3>
+                                Secondary School Certificate (SSC)
+                            </h3>
+
+                            <h4>
+                                Tarash Islamia Pilot Model High School
+                            </h4>
+
+                            <p class="education-result">
+                                RESULT: <span>In Progress</span>
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PROJECTS
+        ================================================== -->
+
+        <section class="content-section section" id="projects">
+
+            <div class="section-number reveal">
+                04
+                <small>PROJECTS</small>
+            </div>
+
+            <div class="section-content">
+
+                <h2 class="section-title reveal">
+                    Projects
+                </h2>
+
+                <div class="projects">
+
+                    <article class="project reveal">
+
+                        <div class="project-number">
+                            01
+                        </div>
+
+                        <div class="project-info">
+
+                            <small>
+                                CURRENTLY
+                            </small>
+
+                            <h3>
+                                Still Exploring
+                            </h3>
+
+                            <p>
+                                Still a lot of things going.
+                                I'll share them when I actually
+                                make one.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+        <section class="contact-section section" id="contact">
+
+            <div class="contact-left reveal">
+
+                <span class="contact-label">
+                    HAVE SOMETHING NEW ?
+                </span>
+
+                <h2>
+                    Find<br>
+                    Me.See you
+                </h2>
+
+                <div class="social-links">
+
+                    <a
+                        href="mailto:tfshouhardo2023@gmail.com"
+                        class="social-box"
+                    >
+                        Email
+                    </a>
+
+                    <a
+                        href="https://instagram.com/shouhardodoes"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-box"
+                    >
+                        Instagram
+                    </a>
+
+                    <a
+                        href="https://github.com/shouhardodoes"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-box"
+                    >
+                        GitHub
+                    </a>
+
+                    <a
+                        href="https://facebook.com/being.shouhardo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-box"
+                    >
+                        Facebook
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-image-area reveal">
+
+                <div class="contact-image">
+
+                    <img
+                        src="assets/me.jpg"
+                        alt="Shouhardo"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer>
+
+        <span>
+            © 2026 SHOUHARDO. All rights reserved.
+        </span>
+
+        <span>
+            KEEP EXPLORING
+        </span>
+
+    </footer>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
